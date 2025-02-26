@@ -63,6 +63,7 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
                       className="w-6 h-6 object-contain relative z-10"
                       width={24}
                       height={24}
+                      priority
                     />
                   </div>
                 </div>

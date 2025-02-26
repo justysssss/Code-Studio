@@ -1,6 +1,22 @@
 import { Monaco } from "@monaco-editor/react";
 import { Theme } from "../../../types";
 
+type BuiltinTheme = 'vs' | 'vs-dark' | 'hc-black';
+
+type MonacoThemeDefinition = {
+  base: BuiltinTheme;
+  inherit: boolean;
+  rules: Array<{
+    token: string;
+    foreground: string;
+  }>;
+  colors: Record<string, string>;
+};
+
+type ThemeDefinitions = {
+  [key: string]: MonacoThemeDefinition;
+};
+
 type LanguageConfig = Record<
   string,
   {
@@ -344,9 +360,9 @@ export const THEMES: Theme[] = [
   { id: "solarized-dark", label: "Solarized Dark", color: "#002b36" },
 ];
 
-export const THEME_DEFINITONS = {
+export const THEME_DEFINITONS: ThemeDefinitions = {
   "github-dark": {
-    base: "vs-dark",
+    base: "vs-dark" as const,
     inherit: true,
     rules: [
       { token: "comment", foreground: "6e7681" },
@@ -370,7 +386,7 @@ export const THEME_DEFINITONS = {
     },
   },
   monokai: {
-    base: "vs-dark",
+    base: "vs-dark" as const,
     inherit: true,
     rules: [
       { token: "comment", foreground: "75715E" },
@@ -394,7 +410,7 @@ export const THEME_DEFINITONS = {
     },
   },
   "solarized-dark": {
-    base: "vs-dark",
+    base: "vs-dark" as const,
     inherit: true,
     rules: [
       { token: "comment", foreground: "586e75" },

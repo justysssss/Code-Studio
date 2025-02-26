@@ -1,5 +1,12 @@
 import { Id } from "../../convex/_generated/dataModel";
 
+export interface MonacoEditor {
+  getValue(): string;
+  setValue(value: string): void;
+  getModel(): unknown;
+  updateOptions(options: Record<string, unknown>): void;
+}
+
 export interface Theme {
   id: string;
   label: string;
@@ -43,10 +50,10 @@ export interface CodeEditorState {
   error: string | null;
   theme: string;
   fontSize: number;
-  editor: any | null; // Monaco editor instance
+  editor: MonacoEditor | null; // Monaco editor instance
   executionResult: ExecutionResult | null;
 
-  setEditor: (editor: any) => void;
+  setEditor: (editor: MonacoEditor) => void;
   getCode: () => string;
   setLanguage: (language: string) => void;
   setTheme: (theme: string) => void;

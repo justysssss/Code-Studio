@@ -93,7 +93,7 @@ export default function TermsPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-gray-200">6. Disclaimer and Limitation of Liability</h2>
             <p className="text-gray-400 leading-relaxed">
-              Code Studio is provided "as is" without any warranties, express or implied. We do not guarantee that the service will be uninterrupted, secure, or error-free. In no event shall Code Studio be liable for any indirect, incidental, special, consequential, or punitive damages.
+              Code Studio is provided &quot;as is&quot; without any warranties, express or implied. We do not guarantee that the service will be uninterrupted, secure, or error-free. In no event shall Code Studio be liable for any indirect, incidental, special, consequential, or punitive damages.
             </p>
           </div>
 

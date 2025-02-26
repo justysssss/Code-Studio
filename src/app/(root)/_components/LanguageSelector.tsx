@@ -8,11 +8,7 @@ import Image from 'next/image';
 import { ChevronDownIcon, Sparkles } from 'lucide-react';
 import useMounted from '@/hooks/useMounted';
 
-interface LanguageSelectorProps {
-  hasAccess: boolean;
-}
-
-function LanguageSelector({ hasAccess }: LanguageSelectorProps) {
+function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const mounted = useMounted();
 
@@ -44,12 +40,14 @@ function LanguageSelector({ hasAccess }: LanguageSelectorProps) {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-3 px-4 py-2.5 bg-[#1e1e2e]/80 
-          rounded-lg transition-all duration-200 border border-gray-800/50 hover:border-gray-700"
+        title="Select programming language"
+        className="group relative flex items-center gap-3 px-4 py-2.5 bg-[#1e1e2e]/80
+          rounded-lg transition-all duration-200 border border-gray-800/50
+          hover:border-gray-700 cursor-pointer"
       >
         {/* Decoration */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/5 
+          className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/5
           rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
           aria-hidden="true"
         />
@@ -61,6 +59,7 @@ function LanguageSelector({ hasAccess }: LanguageSelectorProps) {
             width={24}
             height={24}
             className='w-full h-full object-contain relative z-10'
+            priority
           />
         </div>
 
@@ -126,6 +125,7 @@ function LanguageSelector({ hasAccess }: LanguageSelectorProps) {
                         src={lang.logoPath}
                         alt={`${lang.label} logo`}
                         className="w-full h-full object-contain relative z-10"
+                        priority
                       />
                     </div>
 

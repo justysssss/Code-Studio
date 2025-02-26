@@ -33,6 +33,8 @@ function SnippetDetailPage() {
                   <Image
                     src={`/${snippet.language}.png`}
                     alt={`${snippet.language} logo`}
+                    width={48}
+                    height={48}
                     className="w-full h-full object-contain"
                   />
                 </div>

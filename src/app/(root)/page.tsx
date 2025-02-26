@@ -29,7 +29,7 @@ const FEATURES = [
     id: "profile",
     label: "Developer Profile",
     icon: "👤",
-    image: "/code_editor.png",
+    image: "/profile_page.png",
     description: "Showcase your coding journey with a personalized developer profile"
   },
   {

@@ -48,7 +48,7 @@ const PrivacyPage = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-200">Introduction</h2>
               <p className="text-gray-400 leading-relaxed">
-                This Privacy Policy explains how CodeStudio ("we", "our", or "us") collects, uses, and protects your personal information when you use our online code editor and collaboration platform. We are committed to ensuring that your privacy is protected and we comply with all applicable data protection laws, including the General Data Protection Regulation (GDPR).
+                This Privacy Policy explains how CodeStudio (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) collects, uses, and protects your personal information when you use our online code editor and collaboration platform. We are committed to ensuring that your privacy is protected and we comply with all applicable data protection laws, including the General Data Protection Regulation (GDPR).
               </p>
             </div>
 
@@ -139,7 +139,7 @@ const PrivacyPage = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-200">Updates to This Policy</h2>
               <p className="text-gray-400 leading-relaxed">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.
               </p>
             </div>
 
