@@ -119,3 +119,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shiny-text {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--shiny-width) 0;
+  }
+}
+
+@layer utilities {
+  .animate-shiny-text {
+    animation: shiny-text 3s linear infinite;
+  }
+  
+  .animate-grid {
+    animation: grid 20s linear infinite;
+  }
+}
+
+@keyframes grid {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(24px);
+  }
+}
