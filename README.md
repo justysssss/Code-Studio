@@ -1,12 +1,18 @@
 <div align="center">
-  # ✨ Code Studio
 
-  The elegant code editor and snippet manager for the modern developer
-  
-  [![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge)](https://nextjs.org)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge)](https://www.typescriptlang.org)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Styled-38B2AC?style=for-the-badge)](https://tailwindcss.com)
-  [![Convex](https://img.shields.io/badge/Convex-Powered-FF6B6B?style=for-the-badge)](https://www.convex.dev)
+<img src="public/blocks.png" alt="Code Studio Blocks" width="100" />
+
+# CodeStudio
+
+*The elegant code editor and snippet manager for the modern developer*
+
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Styled-38B2AC?style=for-the-badge)](https://tailwindcss.com)
+[![Convex](https://img.shields.io/badge/Convex-Powered-FF6B6B?style=for-the-badge)](https://www.convex.dev)
+
+<img src="public/code_editor.png" alt="Code Studio Editor" width="800" />
+
 </div>
 
 ## 🚀 Experience the Future of Code Editing
