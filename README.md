@@ -11,8 +11,6 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Styled-38B2AC?style=for-the-badge)](https://tailwindcss.com)
 [![Convex](https://img.shields.io/badge/Convex-Powered-FF6B6B?style=for-the-badge)](https://www.convex.dev)
 
-<img src="public/code_editor.png" alt="Code Studio Editor" width="800" />
-
 </div>
 
 ## 🚀 Experience the Future of Code Editing
