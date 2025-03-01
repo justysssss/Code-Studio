@@ -1,11 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-
-// Import icons dynamically to prevent server-side document reference
-const Code2Icon = dynamic(() => import('lucide-react').then(mod => mod.Code2), { ssr: false });
-const HomeIcon = dynamic(() => import('lucide-react').then(mod => mod.HomeIcon), { ssr: false });
+import { Code2Icon, HomeIcon } from '@/components/NotFoundIcons';
 
 export default function NotFound() {
   return (
@@ -17,8 +13,10 @@ export default function NotFound() {
           
           <div className="bg-[#1e1e2e]/40 backdrop-blur-xl rounded-xl p-6 border border-gray-800/50">
             <div className="flex items-center gap-2 mb-3 text-gray-400/80">
-              <Code2Icon className="w-4 h-4" />
-              <span className="text-sm font-mono">error.ts</span>
+              <span className="w-4 h-4 mb-2">
+                <Code2Icon />
+              </span>
+              <span className="text-sm font-mono ml-2">error.ts</span>
             </div>
             <pre className="text-sm overflow-x-auto">
               <code className="font-mono text-gray-300">
@@ -32,7 +30,9 @@ export default function NotFound() {
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-500/10 hover:bg-blue-500/20
               text-blue-400 rounded-lg transition-all duration-300 border border-blue-500/20 hover:border-blue-500/30"
           >
-            <HomeIcon className="w-4 h-4" />
+            <span className="w-4 h-4">
+              <HomeIcon />
+            </span>
             <span>Return Home</span>
           </Link>
         </div>
