@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="public/code_editor.png" alt="Code Studio" width="600px" />
-
   # ✨ Code Studio
 
   The elegant code editor and snippet manager for the modern developer
@@ -16,7 +14,7 @@
 Code Studio combines powerful editing capabilities with elegant design to create the perfect environment for your code. Whether you're saving important snippets, sharing code with others, or managing your programming solutions, Code Studio has you covered.
 
 <div align="center">
-  <img src="public/snippets_page.png" alt="Snippets Page" width="800px" />
+  <img src="public/landing_page.png" alt="Snippets Page" width="800px" />
 </div>
 
 ## ✨ Key Features
@@ -28,7 +26,7 @@ Code Studio combines powerful editing capabilities with elegant design to create
 - **Custom Themes**: Code in style with your preferred color scheme
 
 <div align="center">
-  <img src="public/editor_pic.png" alt="Editor Experience" width="800px" />
+  <img src="public/editing_page.png" alt="Editor Experience" width="800px" />
 </div>
 
 ### 📦 Snippet Management
@@ -36,6 +34,10 @@ Code Studio combines powerful editing capabilities with elegant design to create
 - **Quick Access**: Find any snippet instantly
 - **Privacy Controls**: Choose who sees your code
 - **Version History**: Keep track of your changes
+
+<div align="center">
+  <img src="public/snippets_page.png" alt="Snippets Page" width="800px" />
+</div>
 
 ### 👥 Social Coding
 - **Profile Showcase**: Display your best code snippets
@@ -55,60 +57,15 @@ Code Studio combines powerful editing capabilities with elegant design to create
 - **Authentication**: Secure user system
 - **Editor**: Custom-built code editor
 
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/code-studio.git
-
-# Install dependencies
-pnpm install
-
-# Set up environment variables
-cp .env.example .env.local
-
-# Start development server
-pnpm dev
-```
-
-## ⚙️ Development Setup
-
-### Prerequisites
-- Node.js 18.0 or higher
-- pnpm package manager
-- Convex account
-
-### Environment Variables
-```
-NEXT_PUBLIC_CONVEX_URL=your_convex_url
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-CLERK_SECRET_KEY=your_clerk_secret
-```
-
-### Database Setup
-```bash
-pnpm dlx convex dev
-```
-
-## 🤝 Contributing
-
-We love contributions! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Submit a pull request
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🌟 Support & Community
 
-- 📚 Documentation: [docs.codestudio.dev](https://docs.codestudio.dev)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/code-studio/issues)
-- 💬 Discord: [Join our community](https://discord.gg/codestudio)
+- 📚 Documentation: [docs.codestudio.dev](https://mycodestudio.vercel.app/Terms)
+- 🐛 Issues: [GitHub Issues](www.linkedin.com/in/sourishbose10)
+- 💬 Linkedin: [Reach me at](www.linkedin.com/in/sourishbose10)
 
 <div align="center">
   <br />
