@@ -1,11 +1,12 @@
-"use client"
+// src/components/NotFoundComponent.tsx (Create a new file)
+"use client";
 
-import dynamic from 'next/dynamic'
-import { Code2, HomeIcon, Terminal } from "lucide-react"
-import Link from "next/link"
-import NavigationHeader from "@/components/NavigationHeader"
-import { useEffect, useState } from "react"
-import type { Variants } from "framer-motion"
+import dynamic from 'next/dynamic';
+import { Code2, HomeIcon, Terminal } from "lucide-react";
+import Link from "next/link";
+import NavigationHeader from "@/components/NavigationHeader";
+import { useEffect, useState } from "react";
+import type { Variants } from "framer-motion";
 
 // Dynamically import motion components with ssr disabled
 const MotionDiv = dynamic(
@@ -23,7 +24,7 @@ const MotionH2 = dynamic(
   { ssr: false }
 );
 
-export default function NotFound() {
+export function NotFoundComponent() {  //Renamed Component
   const [isHovering, setIsHovering] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -59,12 +60,12 @@ export default function NotFound() {
 
   // Container variants for 3D effect
   const containerVariants: Variants = {
-    initial: { 
+    initial: {
       rotateX: 0,
       rotateY: 0,
       scale: 1
     },
-    hover: { 
+    hover: {
       scale: 1.1,
       transition: {
         duration: 0.3
@@ -76,7 +77,7 @@ export default function NotFound() {
   const [glitchKey, setGlitchKey] = useState(0);
   useEffect(() => {
     if (!isMounted) return;
-    
+
     const interval = setInterval(() => {
       if (!isHovering) {
         setGlitchKey(prev => prev + 1);
@@ -106,7 +107,7 @@ export default function NotFound() {
       </div>
 
       <NavigationHeader />
-      
+
       <div className="container relative mx-auto max-w-6xl px-4 pt-32 pb-24">
         <div className="text-center space-y-8">
           <MotionDiv
@@ -141,7 +142,7 @@ export default function NotFound() {
                     animate="visible"
                     whileHover="hover"
                     className="inline-block relative"
-                    style={{ 
+                    style={{
                       textShadow: "0 0 10px rgba(96,165,250,0.3)",
                       color: "#fff"
                     }}
@@ -151,7 +152,7 @@ export default function NotFound() {
                     <MotionSpan
                       className="absolute inset-0 text-blue-400 mix-blend-screen"
                       initial={{ opacity: 0, x: 0 }}
-                      animate={{ 
+                      animate={{
                         opacity: [0, 0.5, 0],
                         x: [-2, 2, -2],
                         transition: {
@@ -166,7 +167,7 @@ export default function NotFound() {
                   </MotionSpan>
                 ))}
               </h1>
-              <MotionH2 
+              <MotionH2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
@@ -176,7 +177,6 @@ export default function NotFound() {
               </MotionH2>
             </MotionDiv>
           </div>
-
           <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -185,12 +185,12 @@ export default function NotFound() {
           >
             <div className="bg-[#1e1e2e]/40 backdrop-blur-xl rounded-xl p-6 border border-gray-800/50 shadow-xl">
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               <div className="flex items-center gap-2 mb-3 text-gray-400/80">
                 <Code2 className="w-4 h-4" />
                 <span className="text-sm font-mono">error.ts</span>
               </div>
-              
+
               <pre className="text-sm">
                 <code className="font-mono">
                   <span className="text-purple-400">try</span>{" "}
@@ -220,16 +220,15 @@ export default function NotFound() {
               </pre>
             </div>
           </MotionDiv>
-
           <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="pt-4"
           >
-            <Link 
+            <Link
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-blue-500/10 hover:bg-blue-500/20 
+              className="inline-flex items-center gap-2 px-8 py-3 bg-blue-500/10 hover:bg-blue-500/20
                 text-blue-400 rounded-xl transition-all duration-300 border border-blue-500/20 hover:border-blue-500/30
                 backdrop-blur-sm hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.3)]"
             >
@@ -240,5 +239,11 @@ export default function NotFound() {
         </div>
       </div>
     </div>
-  )
+  );
 }
+
+
+export default function NotFound() {
+  return <NotFoundComponent/>
+}
+
