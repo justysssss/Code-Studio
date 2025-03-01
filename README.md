@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/blocks_blue.svg" alt="Code Studio Blocks" width="100" />
+<img src="public/blue_blocks.svg" alt="Code Studio Blocks" width="100" />
 
 # CodeStudio
 
