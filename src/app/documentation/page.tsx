@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Book, Code2, Terminal, Braces, Share2, Database, Settings, Workflow } from "lucide-react"
 import NavigationHeader from '@/components/NavigationHeader'
 
-const DocsPage = () => {
+const DocumentationPage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
       <NavigationHeader />
@@ -210,4 +210,4 @@ const DocsPage = () => {
   )
 }
 
-export default DocsPage
+export default DocumentationPage;

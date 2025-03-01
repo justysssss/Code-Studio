@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link';
 import { Code2, HomeIcon } from 'lucide-react';
 
