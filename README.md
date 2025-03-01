@@ -26,7 +26,6 @@ Code Studio combines powerful editing capabilities with elegant design to create
 ### 🎯 Advanced Code Editor
 - **Multi-Language Support**: JavaScript, Python, Java, C++, and many more
 - **Smart Syntax Highlighting**: Crystal-clear code visualization
-- **Intelligent Editor**: Code suggestions that make you more productive
 - **Custom Themes**: Code in style with your preferred color scheme
 
 <div align="center">
@@ -67,7 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Support & Community
 
-- 📚 Documentation: [docs.codestudio.dev](https://mycodestudio.vercel.app/Terms)
+- 📚 Terms: [docs.codestudio.dev](https://mycodestudio.vercel.app/Terms)
 - 🐛 Issues: [GitHub Issues](www.linkedin.com/in/sourishbose10)
 - 💬 Linkedin: [Reach me at](www.linkedin.com/in/sourishbose10)
 
