@@ -1,7 +1,18 @@
 "use client"
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Code2, HomeIcon } from 'lucide-react';
+
+// Create a client-only wrapper for icons
+const IconWrapper = ({ children }: { children: React.ReactNode }) => {
+  return <>{children}</>;
+};
+
+// Ensure the component is only rendered on client side
+const ClientIconWrapper = dynamic(() => Promise.resolve(IconWrapper), {
+  ssr: false,
+});
 
 export default function NotFound() {
   return (
@@ -15,7 +26,9 @@ export default function NotFound() {
           {/* Code Block */}
           <div className="bg-[#1e1e2e]/40 backdrop-blur-xl rounded-xl p-6 border border-gray-800/50">
             <div className="flex items-center gap-2 mb-3 text-gray-400/80">
-              <Code2 className="w-4 h-4" />
+              <ClientIconWrapper>
+                <Code2 className="w-4 h-4" />
+              </ClientIconWrapper>
               <span className="text-sm font-mono">error.ts</span>
             </div>
             <pre className="text-sm overflow-x-auto">
@@ -31,7 +44,9 @@ export default function NotFound() {
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-500/10 hover:bg-blue-500/20
               text-blue-400 rounded-lg transition-all duration-300 border border-blue-500/20 hover:border-blue-500/30"
           >
-            <HomeIcon className="w-4 h-4" />
+            <ClientIconWrapper>
+              <HomeIcon className="w-4 h-4" />
+            </ClientIconWrapper>
             <span>Return Home</span>
           </Link>
         </div>
