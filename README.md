@@ -66,7 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Support & Community
 
-- 📚 Terms: [docs.codestudio.dev](https://mycodestudio.vercel.app/Terms)
+- 📚 Terms: [mycodestudio/terms](https://mycodestudio.vercel.app/Terms)
 - 🐛 Issues: [GitHub Issues](www.linkedin.com/in/sourishbose10)
 - 💬 Linkedin: [Reach me at](www.linkedin.com/in/sourishbose10)
 
