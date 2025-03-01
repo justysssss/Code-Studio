@@ -4,7 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import ConvexClientProvider from "@/components/providers/ConvexClientProviders";
 import Footer from "@/components/Footer";
-import Loader from "@/components/Loader";
+// import Loader from "@/components/Loader";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({
@@ -34,13 +34,13 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-gray-100 flex flex-col`}
         >
-          <Loader>
+          {/* <Loader> */}
             <ConvexClientProvider>
               {children}
             </ConvexClientProvider>
             <Footer />
             <Toaster />
-          </Loader>
+          {/* </Loader> */}
         </body>
       </html>
     </ClerkProvider>
