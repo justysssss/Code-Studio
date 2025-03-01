@@ -150,8 +150,7 @@ const PrivacyPage = () => {
                 If you have any questions about this Privacy Policy or our data practices, please contact us at:
               </p>
               <div className="text-gray-400">
-                <p>Email: privacy@codestudio.com</p>
-                <p>Address: [Your Address]</p>
+                <p>Email: sourishbose10@gmail.com</p>
               </div>
             </div>
           </motion.div>
