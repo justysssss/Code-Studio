@@ -163,7 +163,7 @@ export default function NotFound() {
                   <span className="text-blue-400">await</span>{" "}
                   <span className="text-green-400">navigateTo</span>
                   <span className="text-gray-300">(</span>
-                  <span className="text-orange-300">"/404"</span>
+                  <span className="text-orange-300">&quot;/404&quot;</span>
                   <span className="text-gray-300">);</span>
                   {"\n"}
                   <span className="text-gray-300">{"}"}</span>{" "}
@@ -175,7 +175,7 @@ export default function NotFound() {
                   <span className="text-blue-400">new</span>{" "}
                   <span className="text-green-400">Error</span>
                   <span className="text-gray-300">(</span>
-                  <span className="text-orange-300">"Page not found in the matrix"</span>
+                  <span className="text-orange-300">&quot;Page not found in the matrix&quot;</span>
                   <span className="text-gray-300">);</span>
                   {"\n"}
                   <span className="text-gray-300">{"}"}</span>
