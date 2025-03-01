@@ -1,47 +1,61 @@
-# Code Studio
+<div align="center">
+  <img src="public/code_editor.png" alt="Code Studio" width="600px" />
 
-A powerful, modern web-based code editor and snippet sharing platform that revolutionizes how developers write, share, and collaborate on code. Built with Next.js and powered by cutting-edge technologies, Code Studio provides a seamless environment for managing and sharing code snippets across multiple programming languages.
+  # ✨ Code Studio
 
-[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=flat-square)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Styled-38B2AC?style=flat-square)](https://tailwindcss.com)
-[![Convex](https://img.shields.io/badge/Convex-Powered-FF6B6B?style=flat-square)](https://www.convex.dev)
+  The elegant code editor and snippet manager for the modern developer
+  
+  [![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge)](https://nextjs.org)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge)](https://www.typescriptlang.org)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Styled-38B2AC?style=for-the-badge)](https://tailwindcss.com)
+  [![Convex](https://img.shields.io/badge/Convex-Powered-FF6B6B?style=for-the-badge)](https://www.convex.dev)
+</div>
 
-## Features
+## 🚀 Experience the Future of Code Editing
 
-### Advanced Code Editor
-- **Multi-Language Support**: Write code in multiple programming languages including JavaScript, Python, Java, C++, and more
-- **Syntax Highlighting**: Enhanced code readability with intelligent syntax highlighting
-- **Real-Time Collaboration**: Code together with team members in real-time
-- **Smart Completions**: Intelligent code suggestions and completions
+Code Studio combines powerful editing capabilities with elegant design to create the perfect environment for your code. Whether you're saving important snippets, sharing code with others, or managing your programming solutions, Code Studio has you covered.
 
-### Snippet Management
-- **Organize & Share**: Create, store, and share code snippets efficiently
-- **Version Control**: Track changes and maintain snippet history
-- **Privacy Controls**: Control who can view and edit your snippets
-- **Quick Search**: Find snippets instantly with powerful search functionality
+<div align="center">
+  <img src="public/snippets_page.png" alt="Snippets Page" width="800px" />
+</div>
 
-### Collaboration Tools
-- **Comments & Discussions**: Engage in discussions about code snippets
-- **User Profiles**: Showcase your contributions and favorite snippets
-- **Real-Time Updates**: See changes and comments as they happen
-- **Share & Embed**: Share snippets via links or embed them in documentation
+## ✨ Key Features
 
-### Professional Features
-- **Custom Themes**: Choose from various editor themes
-- **Keyboard Shortcuts**: Boost productivity with customizable shortcuts
-- **Cross-Platform**: Access your snippets from any device
-- **API Access**: Integrate Code Studio into your workflow
+### 🎯 Advanced Code Editor
+- **Multi-Language Support**: JavaScript, Python, Java, C++, and many more
+- **Smart Syntax Highlighting**: Crystal-clear code visualization
+- **Intelligent Editor**: Code suggestions that make you more productive
+- **Custom Themes**: Code in style with your preferred color scheme
 
-## Tech Stack
+<div align="center">
+  <img src="public/editor_pic.png" alt="Editor Experience" width="800px" />
+</div>
 
-- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
-- **Backend**: Convex for real-time data and authentication
-- **Database**: Managed by Convex
-- **Authentication**: Secure user authentication system
-- **Performance**: Optimized for speed and reliability
+### 📦 Snippet Management
+- **Organize**: Create, store, and categorize your code snippets
+- **Quick Access**: Find any snippet instantly
+- **Privacy Controls**: Choose who sees your code
+- **Version History**: Keep track of your changes
 
-## Getting Started
+### 👥 Social Coding
+- **Profile Showcase**: Display your best code snippets
+- **Community Engagement**: Like and comment on shared snippets
+- **Knowledge Sharing**: Learn from other developers
+- **Code Discovery**: Explore snippets from the community
+
+<div align="center">
+  <img src="public/profile_page.png" alt="Profile Page" width="800px" />
+</div>
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js 14, TypeScript
+- **Styling**: Tailwind CSS
+- **Backend**: Convex
+- **Authentication**: Secure user system
+- **Editor**: Custom-built code editor
+
+## 🚀 Getting Started
 
 ```bash
 # Clone the repository
@@ -57,43 +71,47 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-## Development Setup
+## ⚙️ Development Setup
 
-1. **Prerequisites**
-   - Node.js 18.0 or higher
-   - pnpm package manager
-   - A Convex account for backend services
+### Prerequisites
+- Node.js 18.0 or higher
+- pnpm package manager
+- Convex account
 
-2. **Environment Variables**
-   ```
-   NEXT_PUBLIC_CONVEX_URL=your_convex_url
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-   CLERK_SECRET_KEY=your_clerk_secret
-   ```
+### Environment Variables
+```
+NEXT_PUBLIC_CONVEX_URL=your_convex_url
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+```
 
-3. **Database Setup**
-   ```bash
-   pnpm dlx convex dev
-   ```
+### Database Setup
+```bash
+pnpm dlx convex dev
+```
 
-## Contributing
+## 🤝 Contributing
 
-We welcome contributions to Code Studio! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-### Development Process
+We love contributions! Here's how you can help:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Submit a pull request
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Support
+## 🌟 Support & Community
 
-- Documentation: [docs.codestudio.dev](https://docs.codestudio.dev)
-- Issues: [GitHub Issues](https://github.com/yourusername/code-studio/issues)
-- Discord: [Join our community](https://discord.gg/codestudio)
+- 📚 Documentation: [docs.codestudio.dev](https://docs.codestudio.dev)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/code-studio/issues)
+- 💬 Discord: [Join our community](https://discord.gg/codestudio)
+
+<div align="center">
+  <br />
+  <p>Made with ❤️ for developers</p>
+  <p>© 2024 Code Studio. All rights reserved.</p>
+</div>
