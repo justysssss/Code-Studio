@@ -24,7 +24,7 @@ const DocsPage = () => {
             Documentation
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Learn about Code Studio's features, technologies, and how to make the most of our platform.
+            Learn about Code Studio&apos;s features, technologies, and how to make the most of our platform.
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ const DocsPage = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-200">Overview</h2>
               <p className="text-gray-400 leading-relaxed">
-                Code Studio is a powerful online code editor and execution platform that enables developers to write, test, and share code in multiple programming languages. Our platform combines modern technologies like Monaco Editor for code editing and Piston API for secure code execution.
+                Code Studio is a powerful online code editor and execution platform that enables developers to write, test, and share code in multiple programming languages while on the go. Our platform combines modern technologies like Monaco Editor for code editing and Piston API for secure code execution.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ const DocsPage = () => {
                   </li>
                   <li>
                     <span className="font-semibold">Execute</span>
-                    <p>Click the "Run Code" button to execute your code and see the output.</p>
+                    <p>Click the &quot;Run Code&quot; button to execute your code and see the output.</p>
                   </li>
                   <li>
                     <span className="font-semibold">Share (Optional)</span>
