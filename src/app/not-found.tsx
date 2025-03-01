@@ -1,13 +1,35 @@
 "use client"
 
-import { motion, Variants } from "framer-motion"
+import dynamic from 'next/dynamic'
 import { Code2, HomeIcon, Terminal } from "lucide-react"
 import Link from "next/link"
 import NavigationHeader from "@/components/NavigationHeader"
 import { useEffect, useState } from "react"
+import type { Variants } from "framer-motion"
+
+// Dynamically import motion components with ssr disabled
+const MotionDiv = dynamic(
+  () => import("framer-motion").then(mod => mod.motion.div),
+  { ssr: false }
+);
+
+const MotionSpan = dynamic(
+  () => import("framer-motion").then(mod => mod.motion.span),
+  { ssr: false }
+);
+
+const MotionH2 = dynamic(
+  () => import("framer-motion").then(mod => mod.motion.h2),
+  { ssr: false }
+);
 
 export default function NotFound() {
   const [isHovering, setIsHovering] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Glitch animation variants for individual characters
   const glitchVariants: Variants = {
@@ -53,13 +75,28 @@ export default function NotFound() {
   // Random glitch effect
   const [glitchKey, setGlitchKey] = useState(0);
   useEffect(() => {
+    if (!isMounted) return;
+    
     const interval = setInterval(() => {
       if (!isHovering) {
         setGlitchKey(prev => prev + 1);
       }
     }, 3000);
     return () => clearInterval(interval);
-  }, [isHovering]);
+  }, [isHovering, isMounted]);
+
+  // Render static content during SSR
+  if (!isMounted) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0f]">
+        <NavigationHeader />
+        <div className="container mx-auto max-w-6xl px-4 pt-32 pb-24 text-center">
+          <h1 className="text-[120px] font-bold text-white">404</h1>
+          <h2 className="text-2xl text-gray-400/80">Page Not Found</h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative min-h-screen bg-[#0a0a0f] overflow-hidden">
@@ -72,7 +109,7 @@ export default function NotFound() {
       
       <div className="container relative mx-auto max-w-6xl px-4 pt-32 pb-24">
         <div className="text-center space-y-8">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -81,10 +118,10 @@ export default function NotFound() {
             <Terminal className="w-20 h-20 text-blue-400 mx-auto mb-6 relative z-10" />
             {/* Glow effect */}
             <div className="absolute inset-0 blur-2xl bg-blue-500/20 rounded-full" />
-          </motion.div>
+          </MotionDiv>
 
           <div className="perspective-[1000px]">
-            <motion.div
+            <MotionDiv
               key={glitchKey}
               variants={containerVariants}
               initial="initial"
@@ -96,7 +133,7 @@ export default function NotFound() {
             >
               <h1 className="text-[120px] font-bold leading-none tracking-wider flex justify-center gap-4">
                 {"404".split("").map((char, i) => (
-                  <motion.span
+                  <MotionSpan
                     key={i}
                     custom={i}
                     variants={glitchVariants}
@@ -111,7 +148,7 @@ export default function NotFound() {
                   >
                     {char}
                     {/* Character glitch effect */}
-                    <motion.span
+                    <MotionSpan
                       className="absolute inset-0 text-blue-400 mix-blend-screen"
                       initial={{ opacity: 0, x: 0 }}
                       animate={{ 
@@ -125,22 +162,22 @@ export default function NotFound() {
                       }}
                     >
                       {char}
-                    </motion.span>
-                  </motion.span>
+                    </MotionSpan>
+                  </MotionSpan>
                 ))}
               </h1>
-              <motion.h2 
+              <MotionH2 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
                 className="text-2xl text-gray-400/80 font-light tracking-wide"
               >
                 Signal Lost in the Digital Void
-              </motion.h2>
-            </motion.div>
+              </MotionH2>
+            </MotionDiv>
           </div>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -182,9 +219,9 @@ export default function NotFound() {
                 </code>
               </pre>
             </div>
-          </motion.div>
+          </MotionDiv>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -199,7 +236,7 @@ export default function NotFound() {
               <HomeIcon className="w-5 h-5" />
               <span>Return to Base</span>
             </Link>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </div>
